@@ -1,0 +1,38 @@
+# Buck Converter Lab Report
+
+## Objective
+To study the operation of a Buck Converter and analyze its voltage regulation, inductor current, and efficiency.
+
+## Theory
+The Buck Converter is a DC-DC step-down converter that reduces input voltage to a lower output voltage using a switch (MOSFET), diode, inductor, and capacitor.
+
+Key equations:
+- Duty cycle: `D = Vout / Vin`
+- Inductor current ripple: `ΔIL = (Vin - Vout) * D / (L * f)`
+- Output voltage: `Vout = D * Vin`
+
+## Circuit Diagram
+*Insert circuit diagram image here:*  
+`Figures/Buck_Circuit.png`
+
+## Simulation
+- **MATLAB Simulink:** `MATLAB_Simulink_Files/`
+- **Proteus:** `Proteus_Files/`
+
+*Insert simulation screenshots:*  
+`Figures/Buck_Inductor_Current.png`  
+`Figures/Buck_Output_Voltage.png`
+
+## Calculations
+- Duty cycle, inductor selection, ripple calculations, efficiency.  
+- Reference your Excel file if needed: `Calculations.xlsx`
+
+## Results
+| Parameter | Simulated Value | Calculated Value |
+|-----------|----------------|----------------|
+| Vout      | 12 V           | 12 V           |
+| ΔIL       | 0.5 A          | 0.52 A         |
+| Efficiency| 92%            | 90%            |
+
+## Conclusion
+The Buck Converter successfully steps down the input voltage while maintaining continuous inductor current with minimal ripple.
