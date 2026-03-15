@@ -1,48 +1,63 @@
 # Flyback Converter
 
 ## Objective
-To understand and analyze the operation of a flyback converter used for isolated DC-DC power conversion.
+To study the operation and waveform behavior of a flyback converter used for isolated DC-DC power conversion.
 
-## Theory
-A flyback converter is an isolated switch-mode power supply.  
-Energy is stored in the transformer during the ON period of the switch and transferred to the output during the OFF period.
+## Overview
+A flyback converter is an isolated switch-mode DC-DC converter. It stores energy in the transformer during the switch ON period and transfers that energy to the output during the switch OFF period.
 
-### Key Equation
-- Turns ratio: `n = Ns / Np`
-- Output voltage: `Vout = D * Vin * (Ns / Np) / (1 - D)`
+## Key Concepts
+- isolated power conversion
+- transformer-based energy transfer
+- switch-mode operation
+- voltage conversion using duty cycle and turns ratio
 
-## Circuit Diagram
-![Flyback Circuit](Figures/Flyback_Circuit.png)
+## Basic Relation
+The output voltage of a flyback converter depends on the input voltage, duty cycle, and transformer turns ratio.
 
-## Simulation Results
-### Output Voltage
-![Flyback Output Voltage](Figures/Flyback_Output_Voltage.png)
+`Vout = (D / (1 - D)) × (Ns / Np) × Vin`
 
-### Transformer Current
-![Flyback Transformer Current](Figures/Flyback_Transformer_Current.png)
+Where:
+- `D` = duty cycle
+- `Ns` = secondary turns
+- `Np` = primary turns
+- `Vin` = input voltage
 
-### Simulink Model
-![Flyback Simulink Model](Figures/Flyback_Simulink_Model.png)
+## Simulation Model and Waveforms
 
-## Calculations
-The project involved analysis of:
-- duty cycle
-- transformer turns ratio
-- output voltage
-- peak current
-- voltage stress across components
+### Circuit Diagram and Load Current
+![Flyback Circuit and Load Current](Figures/flyback_1_circuit_load.png)
 
-## Results
-| Parameter | Simulated Value | Calculated Value |
-|---|---:|---:|
-| Vout | 15 V | 15 V |
-| Inductor / transformer current ripple | 0.3 A | 0.32 A |
-| Efficiency | 88% | 87% |
+### Switch Current and Switch Voltage
+![Switch Current and Switch Voltage](Figures/flyback_2_switch.png)
+
+### Diode Current and Diode Voltage
+![Diode Current and Diode Voltage](Figures/flyback_3_diode.png)
+
+### Capacitor Current and Capacitor Voltage
+![Capacitor Current and Capacitor Voltage](Figures/flyback_4_capacitor.png)
+
+### Transformer Primary and Secondary Voltage
+![Transformer Voltages](Figures/flyback_5_transformer.png)
+
+## Observations
+- The flyback converter circuit was modeled with measuring devices to observe voltage and current waveforms.
+- The load current waveform shows periodic variation under switching operation.
+- The MOSFET switch current rises during the ON interval, while the switch voltage changes according to the switching state.
+- The diode conducts during the energy transfer interval and its voltage changes accordingly.
+- The capacitor current and capacitor voltage waveforms show the output filtering behavior.
+- The transformer primary and secondary voltages confirm isolated energy transfer between the two sides.
+
+## Applications
+Flyback converters are commonly used in:
+- isolated power supplies
+- battery chargers
+- low-to-medium power SMPS designs
+- embedded and industrial electronic systems
 
 ## Repository Contents
-- `Report.md` – project report
-- `Figures/` – circuit and simulation screenshots
+- `Report.md` – project documentation
+- `Figures/` – simulation screenshots and waveform results
 
 ## Conclusion
-The flyback converter provides isolated DC-DC conversion with good voltage regulation and is widely used in low-to-medium power applications.
-
+This project helped analyze the operating principle of a flyback converter and understand the voltage and current waveforms of important components such as the switch, diode, capacitor, load, and transformer.
