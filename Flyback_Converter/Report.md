@@ -45,3 +45,4 @@ The project involved analysis of:
 
 ## Conclusion
 The flyback converter provides isolated DC-DC conversion with good voltage regulation and is widely used in low-to-medium power applications.
+
