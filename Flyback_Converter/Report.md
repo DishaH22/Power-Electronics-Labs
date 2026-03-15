@@ -26,19 +26,19 @@ Where:
 ## Simulation Model and Waveforms
 
 ### Circuit Diagram and Load Current
-![Flyback Circuit and Load Current](Figures/flyback_1_circuit_load.png - Copy.png)
+![Flyback Circuit and Load Current](Figures/flyback_1_circuit_load.png)
 
 ### Switch Current and Switch Voltage
-![Switch Current and Switch Voltage](Figures/flyback_2_switch.png - Copy.png)
+![Switch Current and Switch Voltage](Figures/flyback_2_switch.png)
 
 ### Diode Current and Diode Voltage
-![Diode Current and Diode Voltage](Figures/flyback_3_diode.png - Copy.png)
+![Diode Current and Diode Voltage](Figures/flyback_3_diode.png)
 
 ### Capacitor Current and Capacitor Voltage
-![Capacitor Current and Capacitor Voltage](Figures/flyback_4_capacitor.png - Copy.png)
+![Capacitor Current and Capacitor Voltage](Figures/flyback_4_capacitor.png)
 
 ### Transformer Primary and Secondary Voltage
-![Transformer Voltages](Figures/flyback_5_transformer.png - Copy.png)
+![Transformer Voltages](Figures/flyback_5_transformer.png)
 
 ## Observations
 - The flyback converter circuit was modeled with measuring devices to observe voltage and current waveforms.
