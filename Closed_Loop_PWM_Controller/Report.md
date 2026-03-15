@@ -93,7 +93,6 @@ The controller maintained the desired 12 V output with low ripple and fast settl
 - `Figures/` – circuit and simulation screenshots
 - `MATLAB_Simulink_Files/` – simulation files
 - `Proteus_Files/` – Proteus implementation
-- `Calculations.xlsx` – controller and performance calculations
 
 ## Applications
 This project is relevant to:
